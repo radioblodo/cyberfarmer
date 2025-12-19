@@ -1,3 +1,8 @@
+---
+title: picoCTF 2025 Rust Fixme3 Guide
+date: '2025-12-19'
+---
+
 This short guide explains how to set up Rust using `rustup`, fix the **picoCTF Rust `fixme3`** challenge, and run the project successfully using Cargo.  
 The challenge itself is intentionally simple and focuses on understanding Rust’s `unsafe` blocks.
 
