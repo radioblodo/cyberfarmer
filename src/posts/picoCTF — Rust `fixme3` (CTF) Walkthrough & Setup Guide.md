@@ -68,7 +68,7 @@ Unlike references (`&`), raw pointers can be null or pointing to invalid memory.
 
 Rust
 
-```
+```rust
 let mut num = 5;
 let r1 = &raw const num; // Immutable raw pointer
 
@@ -83,7 +83,7 @@ Functions marked `unsafe` require the caller to verify they are meeting specific
 
 Rust
 
-```
+```rust
 unsafe fn danger() { /* ... */ }
 
 unsafe {
@@ -97,7 +97,7 @@ Global variables in Rust are called `static`. If they are mutable, they are unsa
 
 Rust
 
-```
+```rust
 static mut TOTAL: i32 = 0;
 
 unsafe {
@@ -111,7 +111,7 @@ A trait is unsafe if its implementation must uphold invariants that the compiler
 
 Rust
 
-```
+```rust
 unsafe trait Secret {}
 unsafe impl Secret for i32 {}
 ```
@@ -122,7 +122,7 @@ Unions are used primarily for interfacing with C code. Since a union field share
 
 Rust
 
-```
+```rust
 union MyUnion { f1: u32, f2: f32 }
 let u = MyUnion { f1: 1 };
 
@@ -190,7 +190,7 @@ Lastly, run the program using the command below and you will see the flag printe
 cargo run
 ```
 
-![[Pasted image 20251219233613.png]]
+![cargo run output showing the flag](/images/fixme3.png)
 ---
 
 ## Common Issues & Fixes
